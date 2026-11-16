@@ -1,35 +1,101 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nguyễn Như Ngọc 12A4</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17130f">
+  <meta name="description" content="Trang giới thiệu bản thân của Nguyễn Như Ngọc - học sinh lớp 12A4 Trường THPT Hòn Gai.">
+  <title>Nguyễn Như Ngọc 12A4</title>
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
-    <h1 align="center"><font color="crimson" face="Verdana">GIỚI THIỆU VỀ BẢN THÂN</font></h1>
-    <h2 align="center"><font color="" face="Tahoma">Trang web này chứa các thông tin thú vị về mình, hãy cùng nhau khám phá nhé!</font></h2>
-    <h2><font color="Teal" face="Tahoma">I. Một số thông tin cơ bản</font><img width="300" align="right" src="ngoc.jpg"></h2>
-    <p><font size="4" color="" face="Tahoma">- Mình tên là Nguyễn Như Ngọc, 17 tuổi. Hiện tại mình đang là học sinh lớp 12A4 của Trường THPT Hòn Gai. </font> </p>
-    <p><font size="4" color="" face="Tahoma">- Mình sinh ngày 16/03/2009, lớn lên tại Vùng Đất Mỏ Quảng Ninh.</font></p>
-    <h2><font color="Royal Blue" face="Tahoma">II. Sở thích của mình</font></h2>
-    <ul style="list-style-type: disc;">
-        <li><font size="4" color="" face="Tahoma">Ăn ngon ngủ kĩ</font></li>
-        <li><font size="4" color="" face="Tahoma">Đi chơi cùng bạn bè</font></li>
-    </ul>
-    <h2><font color="Brown" face="Tahoma">III. Các trường đại học mơ ước</font></h2>
-    <ol type="1">
-        <li><font size="4" color="" face="Tahoma">Trường Đại học Y Hà Nội (HMU)</font></li>
-        <li><font size="4" color="" face="Tahoma">Học viện Quân y (VMMU)</font></li>
-    </ol>
-    <p><font size="4" color="" face="Tahoma">- Dưới đây là một video ngắn giới thiệu về Học viện Quân Y trên nền tảng youtube</font></p>
-    <video width="600" controls>
-            <source src="quanyreal.mp4"
-                    type="video/mp4">
-    </video>
-    <h2><font color="#191970"face="Tahoma">IV.Kết nối với mình</font></h2>
-    <p><img width="100" src="zalo.jpg" width="150"><font size="5" color="#006400" face="Tahoma">: 0888143788</font></p>
-    <a href="https://www.facebook.com/nngoc163" target="_blank">
-    <img width="100" src="fb.png" width="150">
-</a>
+
+  <header class="hero">
+    <span class="hero__tag">Giới thiệu về bản thân</span>
+    <h1><span class="l1">Mình là</span> <span class="name">Nguyễn Như Ngọc</span></h1>
+    <p><span>Trang web này chứa các thông tin thú vị về mình,</span> <span>hãy cùng nhau khám phá nhé!</span></p>
+  </header>
+
+  <div class="who">
+    <img class="avatar" src="ngoc.jpg" alt="Ảnh Nguyễn Như Ngọc">
+    <div class="chips">
+      <span class="chip">17 tuổi</span>
+      <span class="chip">Lớp 12A4</span>
+      <span class="chip">THPT Hòn Gai</span>
+    </div>
+  </div>
+
+  <main class="timeline">
+
+    <section class="item reveal" id="thong-tin">
+      <div class="node">I</div>
+      <div class="card">
+        <h2>Một số thông tin cơ bản</h2>
+        <p>Mình tên là Nguyễn Như Ngọc, 17 tuổi. Hiện tại mình đang là học sinh lớp 12A4 của Trường THPT Hòn Gai.</p>
+        <p>Mình sinh ngày 16/03/2009, lớn lên tại vùng đất mỏ Quảng Ninh.</p>
+      </div>
+    </section>
+
+    <section class="item reveal" id="so-thich">
+      <div class="node">II</div>
+      <div class="card">
+        <h2>Sở thích của mình</h2>
+        <div class="hobbies">
+          <div class="hobby"><span>🍜</span>Ăn ngon ngủ kĩ</div>
+          <div class="hobby"><span>🎡</span>Đi chơi cùng bạn bè</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="item reveal" id="dai-hoc">
+      <div class="node">III</div>
+      <div class="card">
+        <h2>Các trường đại học mơ ước</h2>
+        <div class="unis">
+          <div class="uni"><div class="uni__code">HMU</div><div><b>Trường Đại học Y Hà Nội</b><small>Trường mơ ước số 1</small></div></div>
+          <div class="uni"><div class="uni__code">VMMU</div><div><b>Học viện Quân y</b><small>Trường mơ ước số 2</small></div></div>
+        </div>
+        <figure class="video">
+          <video controls preload="metadata" src="quanyreal.mp4">Trình duyệt của bạn không hỗ trợ video.</video>
+          <figcaption>Video ngắn giới thiệu về Học viện Quân y</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="item reveal" id="ket-noi">
+      <div class="node">IV</div>
+      <div class="card">
+        <h2>Kết nối với mình</h2>
+        <div class="links">
+          <a class="link" href="https://zalo.me/0888143788" target="_blank" rel="noopener">
+            <img src="zalo.jpg" alt="Zalo"><span><b>Zalo</b><small>0888143788</small></span>
+          </a>
+          <a class="link" href="https://www.facebook.com/nngoc163" target="_blank" rel="noopener">
+            <img src="fb.png" alt="Facebook"><span><b>Facebook</b><small>nngoc163</small></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>© 2026 <b>Nguyễn Như Ngọc</b> · Cảm ơn bạn đã ghé thăm!</footer>
+
+  <script>
+    (function () {
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window)) { els.forEach(function (e) { e.classList.add('in'); }); return; }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.1 });
+      els.forEach(function (e) { io.observe(e); });
+    })();
+  </script>
 </body>
 </html>
